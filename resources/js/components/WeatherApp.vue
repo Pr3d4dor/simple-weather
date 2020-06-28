@@ -45,8 +45,8 @@
             <div>{{ Math.round(day.temp.max) }}°C</div>
           </div>
         </div>
-      </div> <!-- end future-weather -->
-    </div> <!-- end weather-container -->
+      </div>
+    </div>
   </div>
 </template>
 
@@ -59,14 +59,14 @@ export default {
   },
   mounted() {
     var placesAutocomplete = places({
-        appId: 'plI4VJ93SA1T',
-        apiKey: '718f14294328b6a13862016e50697e6f',
-        container: document.querySelector('#address')
-      })
-      .configure({
-        type: 'city',
-        aroundLatLngViaIP: false,
-      });
+      appId: 'plI4VJ93SA1T',
+      apiKey: '718f14294328b6a13862016e50697e6f',
+      container: document.querySelector('#address')
+    })
+    .configure({
+      type: 'city',
+      aroundLatLngViaIP: false,
+    });
 
     var $address = document.querySelector('#address-value')
 

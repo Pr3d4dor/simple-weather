@@ -12,10 +12,10 @@ class WeatherInfoController extends Controller
 {
     public function __invoke(Request $request)
     {
-        $lat = $request->get('lat');
-        $long = $request->get('lng');
-        $units = $request->has('units')
-            ? $request->get('units')
+        $lat = $request->query->get('lat');
+        $long = $request->query->get('lng');
+        $units = $request->query->has('units')
+            ? $request->query->get('units')
             : 'metric';
 
         $cacheKey = sprintf(
@@ -45,7 +45,7 @@ class WeatherInfoController extends Controller
             Cache::put(
                 $cacheKey,
                 json_encode($response->json()),
-                now()->endOfDay(),
+                now()->addMinutes(30),
             );
         }
 
