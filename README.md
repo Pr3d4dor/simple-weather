@@ -10,7 +10,7 @@
 
 ## Requeriments
 
-* PHP >= 7.2
+* PHP >= 7.3
 * Algolia Places API key
 * Openweather API key
 
