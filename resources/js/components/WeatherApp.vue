@@ -59,8 +59,8 @@ export default {
   },
   mounted() {
     var placesAutocomplete = places({
-      appId: 'plI4VJ93SA1T',
-      apiKey: '718f14294328b6a13862016e50697e6f',
+      appId: process.env.MIX_ALGOLIA_APP_ID,
+      apiKey: process.env.MIX_ALGOLIA_APP_KEY,
       container: document.querySelector('#address')
     })
     .configure({
