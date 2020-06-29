@@ -20,7 +20,7 @@
 * Clone the repository
 * Access the repository folder: `cd simple-weather`
 * Install the dependencies: `composer install && npm install && npm run production`
-* Set environment variables: `cp .env.production .env`
+* Set environment variables: `cp .env.example .env`
 * Configure the environment variables (MIX_ALGOLIA_APP_ID, MIX_ALGOLIA_APP_KEY and OPENWEATHER_API_KEY)
 * Run `php artisan key: generate`
 * Run `php artisan serve` to start the development server.
