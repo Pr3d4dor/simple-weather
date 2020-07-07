@@ -24,7 +24,7 @@
             <div>{{ location.name }}</div>
           </div>
         </div>
-        <img v-bind:src="'http://openweathermap.org/img/w/' + currentTemperature.icon + '.png' "  />
+        <img v-bind:src="'https://openweathermap.org/img/w/' + currentTemperature.icon + '.png' "  />
       </div> <!-- end current-weather -->
 
       <div class="future-weather text-sm bg-gray-800 px-6 py-8 overflow-hidden">
@@ -37,7 +37,7 @@
           <div class="w-1/6 text-lg text-center text-gray-200">{{ toDayOfMonth(day.dt) }}</div>
           <div class="w-1/6 text-lg text-center text-gray-200">{{ toDayOfWeek(day.dt) }}</div>
           <div class="w-3/6 px-4 flex justify-center items-center">
-            <img v-bind:src="'http://openweathermap.org/img/w/' + day.weather[0].icon + '.png' "  />
+            <img v-bind:src="'https://openweathermap.org/img/w/' + day.weather[0].icon + '.png' "  />
             <div class="ml-3">{{ day.weather[0].main }}</div>
           </div>
           <div class="w-1/6 text-right">
