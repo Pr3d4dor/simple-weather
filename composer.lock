@@ -1883,16 +1883,16 @@
         },
         {
             "name": "predis/predis",
-            "version": "v2.0.0",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/predis/predis.git",
-                "reference": "99c253733dee9447d26257dc669d33d5ac84713d"
+                "reference": "fbf270156f529a9920551c6f499c52a11ca4a1c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/predis/predis/zipball/99c253733dee9447d26257dc669d33d5ac84713d",
-                "reference": "99c253733dee9447d26257dc669d33d5ac84713d",
+                "url": "https://api.github.com/repos/predis/predis/zipball/fbf270156f529a9920551c6f499c52a11ca4a1c3",
+                "reference": "fbf270156f529a9920551c6f499c52a11ca4a1c3",
                 "shasum": ""
             },
             "require": {
@@ -1942,7 +1942,7 @@
             ],
             "support": {
                 "issues": "https://github.com/predis/predis/issues",
-                "source": "https://github.com/predis/predis/tree/v2.0.0"
+                "source": "https://github.com/predis/predis/tree/v2.1.0"
             },
             "funding": [
                 {
@@ -1950,7 +1950,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-06-08T13:14:56+00:00"
+            "time": "2023-01-16T23:33:05+00:00"
         },
         {
             "name": "psr/container",
